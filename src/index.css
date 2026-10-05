@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+@import 'react-odontogram/style.css';
+
+@theme {
+  --color-brand-50: #eefcfb;
+  --color-brand-100: #d3f5f2;
+  --color-brand-200: #abe9e5;
+  --color-brand-300: #6fd6d1;
+  --color-brand-400: #34bcb8;
+  --color-brand-500: #16a09c;
+  --color-brand-600: #0f807e;
+  --color-brand-700: #106666;
+  --color-brand-800: #125152;
+  --color-brand-900: #134344;
+  --color-ink: #10303a;
+  --color-cream: #f7fafb;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Microsoft YaHei', system-ui, sans-serif;
+  color: var(--color-ink);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  background: var(--color-cream);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* odontogram 容器自适应 */
+.odonto-wrap svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
