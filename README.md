@@ -3,7 +3,7 @@
 > 面向普通人的口腔健康科普与自检网站。把牙医的「牙位语言」翻译成大家看得懂、用得上的工具。
 > 口腔医学专业学生作品 · 黑客松项目。
 
-🔗 在线体验：（部署后填写）
+🔗 在线体验：https://aaaaaliangjiayu.github.io/oral-care-atlas/
 
 ---
 
@@ -45,6 +45,12 @@ npm install
 npm run dev      # 开发
 npm run build    # 生产构建，产物在 dist/
 ```
+
+## 自动部署（GitHub Pages）
+
+仓库已配置 `.github/workflows/deploy.yml`：每次 push 到 `main` 会自动构建并发布到 GitHub Pages。
+首次需在 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**（之后无需再管）。
+上线地址即本 README 顶部的在线体验链接。
 
 ## 免责声明
 
